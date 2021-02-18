@@ -12,6 +12,7 @@ public class Checkpoint {
     public Checkpoint(Plugin plugin) {
         this.path = plugin.getDataFolder().getAbsoluteFile().toString();
 
+        // テーブルの作成
         String sql = "CREATE TABLE IF NOT EXISTS cpdata(uuid text, parkour text primary key, x real, y real, z real, pitch real, yaw real)";
         try(
                 Connection con = DriverManager.getConnection("jdbc:sqlite:" + path + "/checkpoint.db");

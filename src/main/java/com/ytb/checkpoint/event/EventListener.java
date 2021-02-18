@@ -56,11 +56,13 @@ public class EventListener implements Listener {
         Checkpoint cp = new Checkpoint(plugin);
         Location location = cp.getCheckPoint(player);
 
+        // nullチェック
         if(location == null) {
             player.sendMessage("§cCPが設定されていません！");
             return true;
         }
 
+        // 本処理
         if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             if(hold_item.isSimilar(returner)) {
                 player.teleport(location);
