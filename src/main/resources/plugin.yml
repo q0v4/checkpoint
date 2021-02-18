@@ -1,0 +1,8 @@
+name: Checkpoint
+version: ${project.version}
+main: com.ytb.checkpoint.Main
+authors: [ytb]
+description: "チェックポイントを設定するプラグインだよ"
+commands:
+  setcp:
+    description: "cpをセットするコマンドだよ"
