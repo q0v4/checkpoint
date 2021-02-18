@@ -1,2 +1,8 @@
 # checkpoint
- mcparkour checkpoint plugin for java edition
+名前の通りです
+チェックポイントを設定します
+
+## command
+/setcp ... 現在地点をcpとして登録します
+
+cpにはログイン時に配布される赤い染料を右クリックで戻れます
